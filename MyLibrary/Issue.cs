@@ -8,9 +8,9 @@ namespace MyLibrary
 {
     class Issue
     {
-        private Book objBook;
-        private Customer objCustomer;
-        private DateTime date;
-        private Worker objWorker;
+        public Book objBook { get; set; }
+        public Customer objCustomer { get; set; }
+        public DateTime date { get;  set; }
+        public Worker objWorker {  get;  set; }
     }
 }

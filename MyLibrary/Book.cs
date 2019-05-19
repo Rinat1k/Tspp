@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
-    class Book
+    public class Book
     {
-        private DateTime year;
-        private string nameAuthor;
-        private string title;
-        private string state;
-        public int SetInfBook();
-        public int ShowInfBook();
+        public DateTime year {  get; set; }
+        public string nameAuthor { get;  set; }
+        public string title {  get;  set; }
+        public string state {  get; set; }
+       // public int SetInfBook();
+       // public int ShowInfBook();
     }
 }

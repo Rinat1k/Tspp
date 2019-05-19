@@ -8,12 +8,12 @@ namespace MyLibrary
 {
     class Worker
     {
-        private BookCatalog _books;
-        private string name;
-        public int ViewCatalog();
-        public int WriteOffBook(Book _book);
-        public int IssueBook(Book _book, Customer _person);
-        public void SetInfWorker();
-        public void ShowInfWorker();
+        public BookCatalog _books { get; set; }
+        public string name {  get; set; }
+      //  public int ViewCatalog();
+      //  public int WriteOffBook(Book _book);
+       // public int IssueBook(Book _book, Customer _person);
+       // public void SetInfWorker();
+       // public void ShowInfWorker();
     }
 }

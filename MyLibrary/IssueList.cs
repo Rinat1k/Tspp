@@ -9,8 +9,8 @@ namespace MyLibrary
     class IssueList
     {
         private List<Issue> stat;
-        public ShowList();
-        public ChangeListIssue();
-        public SetList();
+       // public ShowList();
+      //  public ChangeListIssue();
+        //public SetList();
     }
 }
