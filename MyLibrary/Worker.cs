@@ -22,7 +22,7 @@ namespace MyLibrary
             _issueList.AddListIssue(new Issue(this.name, _person.name, _person.num, DateTime.Now, _book.title));
             return 0;
         }
-        public int AddBook() => _books.AddBook();
+       // public int AddBook() => _books.AddBook();
         public void ChangeNameWorker() => name = Console.ReadLine();
         public void RetBook(ref Book _book) => _book.state = "Свободная";
         //public void ShowInfWorker() { return ; }

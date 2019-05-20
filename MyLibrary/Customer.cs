@@ -12,12 +12,21 @@ namespace MyLibrary
         public int num { get; set; }
         public BookCatalog _books { get; set; }
         public string name;
-        public void ViewCatalog(BookCatalog obj) => obj.ShowListBook();
-        public int TakeBook(ref Book _book, ref Worker _worker,ref IssueList _issueList)
+        public void ViewCatalog(ref BookCatalog obj) => obj.ShowListBook();
+        public int TakeBook( ref BookCatalog _books, ref Worker _worker,ref IssueList _issueList)
         {
-            _books.book.Add(_book);
-            _worker.WriteOffBook(ref _book);
-            _issueList.AddListIssue(new Issue(_book.nameAuthor,this.name,this.num,DateTime.Now,_worker.name));
+            Book newBook = new Book();
+            Console.WriteLine("Введите пожалуйста информацию о книге: ");
+            newBook.SetInfBook();
+            for (int i = 0; i < _books.book.Count; i++)
+            {
+                if (newBook == _books.book[i])
+                {
+                    _books.book[i].state = "Списана";
+                    this._books.book.Add(_books.book[i]);
+                    _issueList.AddListIssue(new Issue(_books.book[i].nameAuthor, this.name, this.num, DateTime.Now, _worker.name));
+                }
+            }
             return 0;
         }
         public int ReturnBook(ref Book book, ref Worker _worker)
@@ -29,9 +38,6 @@ namespace MyLibrary
         public void ShowInfCustomer() { return; }
         public void SetInfCustomer()
         {
-            Console.WriteLine("Введите информацию о клиенте: ");
-            name = Console.ReadLine();
-            //num++;
             return;
         }
 }
