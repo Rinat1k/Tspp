@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
-    class Customer
+    public class Customer
     {
         public int num { get;set; }
-        public BookCatalog _books { get;  set; }
-        private string name;
+        public string name { get; set; }
+        Customer(int num,string name)
+        {
+            this.num = num;
+            this.name = name;
+        }
        // public int ViewCatalog(BookCatalog obj);
        // public int TakeBook(ref BookCatalog _book, Worker _worker);
        // public int ReturnBook(ref BookCatalog book, Worker _worker);

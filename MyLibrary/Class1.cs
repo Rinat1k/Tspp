@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
-    public class IssueList
+    public class Class1
     {
-        private List<Issue> stat;
-       // public ShowList();
-      //  public ChangeListIssue();
-        //public SetList();
     }
 }

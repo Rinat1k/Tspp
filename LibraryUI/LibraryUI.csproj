@@ -66,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ListBook.resx">
+      <DependentUpon>ListBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListIssue.resx">
       <DependentUpon>ListIssue.cs</DependentUpon>
     </EmbeddedResource>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
-    class BookCatalog
+    public class BookCatalog
     {
         private List<Book> book;
        // public int SearchBook(Book _book);
