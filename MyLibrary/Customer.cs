@@ -42,7 +42,7 @@ namespace MyLibrary
                 if (string.Compare(title, _books.book[i].title) == 0)
                 {
                     _books.book.Remove(_books.book[i]);
-                    _worker.RetBook(ref _bc);
+                    _worker.RetBook(ref _bc,title);
                 }
                 }
             

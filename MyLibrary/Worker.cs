@@ -24,10 +24,10 @@ namespace MyLibrary
         }
        // public int AddBook() => _books.AddBook();
         public void ChangeNameWorker() => name = Console.ReadLine();
-        public void RetBook( ref BookCatalog _bc)
+        public void RetBook( ref BookCatalog _bc, string title)
         {
-            Console.WriteLine("Введите название книги которую хотите вернуть");
-            string title = Console.ReadLine();
+            //Console.WriteLine("Введите название книги которую хотите вернуть");
+            //title = Console.ReadLine();
             int i = 0;
             for (i=0;i<_bc.book.Count;i++)
             {

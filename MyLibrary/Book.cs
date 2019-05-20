@@ -52,7 +52,7 @@ namespace MyLibrary
                 Console.WriteLine("-----------------------------------------------");
                 Console.WriteLine("+Название  | Имя автора  |  Год  |  Состоние   +");
             }
-            Console.WriteLine($"+  {title}   |{nameAuthor}       |{year}   |{state}+");
+            Console.WriteLine($"+  {title}   |{nameAuthor}       |{year}      |{state}+");
             return;
         }
     }
