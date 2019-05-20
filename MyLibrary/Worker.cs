@@ -24,7 +24,18 @@ namespace MyLibrary
         }
        // public int AddBook() => _books.AddBook();
         public void ChangeNameWorker() => name = Console.ReadLine();
-        public void RetBook(ref Book _book) => _book.state = "Свободная";
+        public void RetBook( ref BookCatalog _bc)
+        {
+            Console.WriteLine("Введите название книги которую хотите вернуть");
+            string title = Console.ReadLine();
+            int i = 0;
+            for (i=0;i<_bc.book.Count;i++)
+            {
+                if (string.Compare(title,_bc.book[i].title)==0) _bc.book[i].state = "Свободная";
+            }
+            //_book.state = "Свободная";
+           return;
+        }
         //public void ShowInfWorker() { return ; }
     }
 }

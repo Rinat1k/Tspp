@@ -14,8 +14,8 @@ namespace MyLibrary
             for (int i=0;i<stat.Count;i++)
             {
                 Console.WriteLine("+-------------------------------------------------------------+");
-                Console.WriteLine("+Работник  | Клиент/Номер  |    Дата          |  Книга        +");
-                Console.WriteLine($"+{stat[i].ObjWorker.name}               {stat[i].objCustomer.name},{stat[i].objCustomer.num}       {stat[i].date}{stat[i].objBook.title}+");
+                Console.WriteLine("+      Работник        |     Клиент/Номер     |        Дата          |       Книга        +");
+                Console.WriteLine($"+{stat[i].ObjWorker.name}  {stat[i].objCustomer.name},{stat[i].objCustomer.num}   {stat[i].date}{stat[i].objBook.title}+");
             }
             Console.WriteLine("+-------------------------------------------------------------+");
             return;
