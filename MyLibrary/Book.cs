@@ -12,7 +12,7 @@ namespace MyLibrary
         public string nameAuthor { get;  set; }
         public string title {  get;  set; }
         public string state {  get; set; }
-       // public int SetInfBook();
-       // public int ShowInfBook();
+        public int SetInfBook();
+        public int ShowInfBook();
     }
 }
