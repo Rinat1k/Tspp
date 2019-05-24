@@ -44,8 +44,8 @@ namespace MyLibrary
                     _books.book.Remove(_books.book[i]);
                     _worker.RetBook(ref _bc,title);
                 }
-                }
-            
+            }
+
             return 0;
         }
         public void ShowInfCustomer() { return; }
@@ -53,5 +53,5 @@ namespace MyLibrary
         {
             return;
         }
-}
+    }
 }
