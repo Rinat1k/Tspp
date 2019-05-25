@@ -8,9 +8,14 @@ namespace MyLibrary
 {
     public class Issue
     {
-        public Book objBook { get; set; }
-        public Customer objCustomer { get; set; }
+        public int issueID { get; set; }
+        public int CustomerID { get; set; }
+        public int WorkerID { get; set; }
+        public virtual Worker Worker { get; set; }
+        public virtual Customer Customer { get; set; }
+        /*public Customer objCustomer { get; set; }
         public DateTime date { get;  set; }
-        public Worker objWorker {  get;  set; }
+        public Worker objWorker {  get;  set; }*/
+        
     }
 }
